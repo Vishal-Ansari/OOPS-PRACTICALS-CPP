@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    string s1="abc";
+    int a=10;
+    string s2=s1+a;
+    cout<<s2;
+    
+    return 0;
+}
