@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int a=10;
+    bool b=true;
+    short int  c=12;
+    long int d=100000550;
+    float e=12.23456788;
+    double f=13.234567;
+    long double g=1234.765432165432;
+    char h='A';
+
+    cout<< a <<" "<<  b<<" "  <<  c<<" "  <<  d<<" "  <<  e<<" "  <<  f<<" "  <<  g<<" "  <<  h;
+    return 0;
+}
