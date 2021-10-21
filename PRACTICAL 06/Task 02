@@ -1,0 +1,23 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+int main()
+{
+    int l,i,j,rev;
+    char s1[100],s2[100];
+    cout<<"enter the string:  ";
+   gets(s1);
+   l=strlen(s1);
+   for(i=l-1,j=0;i>=0;i--,j++)
+   {
+       s2[j]=s1[i];
+   }
+   rev=strcmp(s1,s2);
+   if(rev==1)
+   cout<<"not palindrome";
+   else
+   cout<<"thi given string is palindrome";
+  
+    return 0;
+}
