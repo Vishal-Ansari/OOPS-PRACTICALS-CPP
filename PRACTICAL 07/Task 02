@@ -1,0 +1,35 @@
+#include <iostream>
+#include <ctime>
+using namespace std;
+
+int main() 
+{
+   time_t now = time(0);
+   char* date_time = ctime(&now);
+   string day,month,date,time,year;
+   int count=0;
+   for(int i=0;date_time[i]!='\0';i++)
+   {
+       if(date_time[i]==' ')    count++;
+       else if(count==0) day+=date_time[i];
+       else if(count==1) month+=date_time[i];
+       else if(count==2) date+=date_time[i];
+       else if(count==3) time+=date_time[i];
+       else if(count==4) year+=date_time[i];
+   }
+   int choice;
+   cout<<"enter the index value: ";
+   cin>>choice;
+   switch(choice)
+   {
+       case 1: cout << year << endl;
+                break;
+       case 2: cout << month << endl;
+                break;
+       case 3: cout << day << endl;
+                break;
+       case 4: cout << "NOT APPLICABLE" << endl;
+                break;
+   }
+    return 0;
+}
